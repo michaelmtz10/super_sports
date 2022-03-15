@@ -126,3 +126,43 @@ li a:hover {
         transform: translateX(25%);
     }
 }
+.row {
+    margin: auto;
+}
+
+.row, .row > .column {
+    padding: 1vw;
+}
+
+.column {
+    float: left;
+    width: 33.33;
+    display: none;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.content {
+    background-color: aqua;
+    padding: auto;
+}
+.show {
+    display: block;
+}
+.class-btn{
+    border: none;
+    outline: none;
+    padding: 2vh 4vw;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+.class-btn:hover {
+    background-color: yellow;
+}
+.class-btn.active {
+    background-color: brown;
+    color: azure;
+}
